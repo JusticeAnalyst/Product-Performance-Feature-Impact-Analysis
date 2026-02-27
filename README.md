@@ -68,5 +68,5 @@ Links customer feedback and sentiment directly to churn behaviour and feature ex
 
 ##  Author
 **Justice Analyst**
-- 📊 [@JusticeAnalyst](https://twitter.com/JusticeAnalyst)
-- 🐦 [@JusticeNelson50](https://twitter.com/JusticeNelson50)
+- Linkedin [@JusticeAnalyst](https://twitter.com/JusticeAnalyst)
+- Twiiter [@JusticeNelson50](https://twitter.com/JusticeNelson50)
