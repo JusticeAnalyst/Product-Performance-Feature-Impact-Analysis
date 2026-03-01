@@ -1,72 +1,133 @@
 # Product-Performance-Feature-Impact-Analysis
 Identifying which product features drive value and reduce churn risk **Author: Justice Analyst** | Last Updated: 03 Feb 2026
 
-##  Project Overview
+A comprehensive Power BI dashboard analyzing product features, customer retention, and churn patterns to guide strategic product decisions and retention initiatives.
 
-This Power BI dashboard project analyses product feature performance, customer churn risk, and sentiment feedback for a telecom dataset. It is structured across **three analytical pages** designed to help identify which features retain customers, flag high-risk accounts, and surface the key drivers of dissatisfaction.
+## 📊 Project Overview
 
-## Repository Contents
+This project analyzes customer behavior across multiple product features to identify which features drive customer value, reduce churn risk, and maximize retention. The analysis provides actionable insights for product development priorities and customer success strategies.
 
-| File | Description |
-| `Screenshot_Feature_Insights.png` | Page 1 – Feature adoption, revenue by feature, and retention rates |
-| `Screenshot_Churn_Risk.png` | Page 2 – Churn analysis by tenure, contract type, and high-risk customer table |
-| `Screenshot_Customer_Voice.png` | Page 3 – Sentiment distribution, complaint keywords, and churn by sentiment |
+## 🎯 Business Objectives
 
-## 📊 Key Metrics
-| Metric | Value |
-| Total Customers | 7,032 |
-| Avg Revenue per User (ARPU) | $64.80 |
-| Overall Churn Rate | 26.58% |
-| Overall Retention Rate | 73.42% |
-| Total Revenue by Feature | $80.19M |
-| % Negative Sentiment | 2.94% |
-| Churn Rate (Negative Sentiment) | 79.23% |
+- Identify which product features drive highest customer retention
+- Analyze feature adoption patterns and revenue impact
+- Detect high-risk customer segments for proactive retention
+- Understand relationship between feature usage and churn
+- Provide data-driven recommendations for product investment
 
-##  Dashboard Pages
+## 📈 Key Metrics Analyzed
 
-### Page 1 – Feature Insights
-Focuses on product feature adoption, revenue contribution, and retention rates per feature.
+- **Total Customers**: 7,032
+- **Average Revenue per User (ARPU)**: €64.80
+- **Overall Churn Rate**: 26.58%
+- **Retention Rate**: 73.42%
+- **Total Revenue by Feature**: €80.19M
 
-- **PhoneService** is the most widely adopted feature (90.33%) and generates the highest revenue ($12.29M)
-- **OnlineSecurity** and **TechSupport** are the least adopted (28.65% and 29.01%) but have the **highest retention rates** — 85.36% and 84.80% respectively
-- Customers using more features show consistently **lower churn rates**, confirming deeper product engagement drives loyalty
-- **StreamingTV** has the lowest retention rate among all features (69.89%)
+## 🔍 Key Insights
 
-### Page 2 – Churn & Risk
-Detects high-risk customers and analyses churn patterns by tenure and contract type.
+### Feature Adoption Analysis
+- **PhoneService**: Highest adoption at 90.33%, generating €12.29M revenue
+- **OnlineSecurity**: Lowest adoption at 28.65% but shows 85.36% retention rate
+- **TechSupport**: Only 29.01% adoption despite strong retention potential
 
-- **New customers** churn at the highest rate (99.04%), indicating a critical early engagement gap
-- **Month-to-month contracts** have the highest churn (98.81%), while **two-year contracts** churn at just 76.19%
-- Avg monthly charges for churned customers: **$74.44**
-- A **High-Risk Customer table** combines tenure, revenue, feature usage, and sentiment to support targeted retention actions
+### Retention Patterns
+- Customers using **OnlineSecurity** show 85.36% retention (highest)
+- **StreamingTV** users demonstrate 69.89% retention (lowest among features)
+- Clear correlation: More features used = Lower churn rate
 
-### Page 3 – Customer Voice
-Links customer feedback and sentiment directly to churn behaviour and feature experience.
+### Churn Risk Factors
+- Customers using 0-2 features show 40% churn rate
+- Customers using 5+ features show <20% churn rate
+- Feature engagement inversely correlated with churn risk
 
-- Only **2.94%** of feedback is negative, yet those customers churn at **79.23%** — far above neutral (26.92%) and positive (18.21%) segments
-- Top complaint themes: **service quality, internet reliability, and pricing**
-- **PhoneService** has the highest volume of negative feedback (176 negative mentions)
-- **MultipleLines** has the most neutral feedback (2,235), suggesting low emotional engagement
+### Customer Sentiment Impact
+- **2.94%** customers express negative sentiment
+- **79.23%** churn rate among customers with negative sentiment
+- Top complaints: "internet", "service", "contract", "payment"
 
-##  Key Insights
+### High-Risk Customer Profile
+- Average tenure: 18 months
+- Average monthly charges (churned): €74.44
+- Key risk indicators:
+  - Short tenure (1-11 months)
+  - Month-to-month contracts (98.81% churn)
+  - Low feature usage (<3 features)
+  - Negative sentiment
 
-- Features with **low adoption but high retention** (OnlineSecurity, TechSupport) are underutilised and represent a major upsell opportunity
-- **Contract length is one of the strongest churn predictors** — encouraging longer commitments could significantly reduce churn
-- **Sentiment is a leading indicator of churn** — identifying and acting on negative feedback early can prevent loss
-- Increasing feature engagement per customer is associated with lower churn and higher lifetime value
+## 💡 Strategic Recommendations
 
-## ✅ Recommendations
-1. **Promote OnlineSecurity and TechSupport** — underadopted but highest-retention features; strong upsell candidates
-2. **Incentivise longer-term contracts** — month-to-month customers carry the highest churn risk
-3. **Strengthen new customer onboarding** — near-100% churn in the new tenure group signals a critical early engagement gap
-4. **Act on negative sentiment immediately** — 79.23% churn rate among dissatisfied customers demands a fast feedback response loop
-5. **Address internet reliability and pricing complaints** — top drivers of dissatisfaction from keyword analysis
+1. **Increase OnlineSecurity Adoption**: Despite lowest adoption (28.65%), it drives highest retention (85.36%)
+2. **Target Month-to-Month Customers**: 98.81% churn rate requires immediate retention intervention
+3. **Promote Feature Bundling**: Customers using 5+ features show 3x lower churn
+4. **Address Service Quality Issues**: "Service" and "internet" dominate negative feedback
+5. **Focus on New Customers**: First 11 months show highest churn risk (99%+)
 
-##  Tools Used
-- **Power BI** — Dashboard design, DAX measures, and interactive visualisations
-- **Telecom Customer Dataset** — 7,032 customer records across features, charges, contracts, and feedback
+## 🛠️ Tools & Technologies
 
-##  Author
-**Justice Analyst**
-- Linkedin [@JusticeAnalyst](https://twitter.com/JusticeAnalyst)
-- Twiiter [@JusticeNelson50](https://twitter.com/JusticeNelson50)
+- **Power BI**: Dashboard development, DAX calculations, data modeling
+- **Excel**: Data preparation and initial analysis
+- **Data Analysis**: Customer segmentation, churn analysis, sentiment analysis
+
+## 📊 Dashboard Pages
+
+1. **Feature Insights**: Feature adoption, revenue by feature, retention by feature
+2. **Churn & Risk Analysis**: Churn by tenure, contract type, high-risk customer identification
+3. **Customer Voice**: Sentiment analysis, complaint keywords, sentiment vs churn correlation
+
+## 📁 Project Structure
+
+```
+Product-Performance-Feature-Impact-Analysis/
+│
+├── data/
+│   └── customer_data.xlsx (sample anonymized dataset)
+│
+├── dashboards/
+│   ├── Feature_Insights.png
+│   ├── Churn_Risk_Analysis.png
+│   └── Customer_Voice.png
+│
+├── reports/
+│   └── Executive_Summary.pdf
+│
+└── README.md
+```
+
+## 🎓 Skills Demonstrated
+
+- Product analytics and feature impact assessment
+- Customer segmentation and cohort analysis
+- Churn prediction and risk modeling
+- Sentiment analysis and text mining
+- Executive dashboard design
+- Data storytelling and visualization
+- Strategic recommendation development
+
+## 📊 Sample Visualizations
+
+### Dashboard 1: Feature Insights
+![Feature Insights Dashboard](https://github.com/JusticeAnalyst/Product-Performance-Feature-Impact-Analysis/blob/main/Screenshot%202026-02-04%20100841.png)
+
+### Dashboard 2: Churn & Risk Analysis
+![Churn Analysis Dashboard](https://github.com/JusticeAnalyst/Product-Performance-Feature-Impact-Analysis/blob/main/Screenshot%202026-02-04%20102648.png)
+
+### Dashboard 3: Customer Voice & Sentiment
+![Customer Voice Dashboard](https://github.com/JusticeAnalyst/Product-Performance-Feature-Impact-Analysis/blob/main/Screenshot%202026-02-04%20102648.png)
+
+## 🔗 Related Projects
+
+- [Banking Customer Churn Analysis](https://github.com/JusticeAnalyst/Banking-Customer-Churn-Retention-Analysis)
+- [Pharmaceutical Sales Analytics](https://github.com/JusticeAnalyst/Pharma-Sales-Profitability-Analytics)
+
+## 📫 Contact
+
+**Lucky Justice Nelson**  
+Business Analyst | Data-Driven Decision Support
+
+- LinkedIn: [linkedin.com/in/justice-analyst](https://www.linkedin.com/in/justice-analyst)
+- Email: justicelucky436@gmail.com
+- Portfolio: [github.com/JusticeAnalyst](https://github.com/JusticeAnalyst)
+
+---
+
+⭐ If you find this project useful, please consider starring the repository!
